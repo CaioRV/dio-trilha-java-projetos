@@ -2,11 +2,11 @@ import java.util.Locale;
 import java.util.Scanner;
 public class ContaTerminal {
     public static void main (String [] args) {
-        //To Do: Conhecer e importar a classe Scanner
+        //Conhecer e importar a classe Scanner
         Scanner scannerUsuario = new Scanner(System.in).useLocale(Locale.US);
 
         String exemploNumAgencia = "(Ex.: ***-*)";
-        //To Do: Exibir as mensagens para nosso usuario
+        //Exibir as mensagens para nosso usuario
         System.out.println("Para começamos, por favor, informe o número da Agência: " + exemploNumAgencia);
         String numeroDAgencia = scannerUsuario.next();
 
@@ -22,7 +22,7 @@ public class ContaTerminal {
         System.out.println("O quanto gostaria de depositar: ");
         double saldoConta = scannerUsuario.nextDouble();
 
-        //To Do: Obter pela class Scanner os valores pelo terminal
+        //Obter pela class Scanner os valores pelo terminal
         System.out.println("Olá " + primeiroNomeUsuario + " " + sobrenomeUsuario + ", obrigado por criar uma conta em nosso banco.");
         System.out.println("Sua agência é " + numeroDAgencia + ", conta número " + numeroConta + ". Seu saldo de " + saldoConta + " " + "já está disponível para saque.");
     }
